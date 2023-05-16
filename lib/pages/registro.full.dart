@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:linea_amarilla/blocs/registro/registro_bloc.dart';
 import 'package:linea_amarilla/blocs/share_pref/login.preferences.dart';
 import 'package:linea_amarilla/helpers/mostrar_alerta.dart';
+import 'package:linea_amarilla/helpers/mostrar_uso_inf.dart';
 import 'package:linea_amarilla/pages/inicio.dart';
 import 'package:linea_amarilla/pages/login.dart';
 import 'package:linea_amarilla/widgets/Inf_inventario_1.widget.dart';
@@ -114,14 +115,46 @@ class _CarouselChangeReasonDemoState extends State<CarouselChangeReasonDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            "¡Quiero registrarme!",
-            style: TextStyle(color: Colors.black),
-          ),
-          backgroundColor: Color.fromARGB(255, 247, 209, 63),
+      appBar: AppBar(
+        title: const Text(
+          "¡Quiero registrarme!",
+          style: TextStyle(color: Colors.white),
         ),
-        body: Column(
+        actions: [
+          ElevatedButton(
+            onPressed: () {
+              mostrarUsoInformacion(
+                  context,
+                  '',
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+                  'Acepto');
+            },
+            style: ElevatedButton.styleFrom(
+                shape: LinearBorder(),
+                backgroundColor: Color.fromARGB(255, 254, 212, 48)),
+            child: const Text(
+              '?',
+              style: TextStyle(
+                  fontSize: 28,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w400),
+            ),
+          )
+        ],
+        backgroundColor: Color.fromARGB(255, 247, 209, 63),
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          image: const DecorationImage(
+              image: AssetImage("assets/images/fondo_colores.png"),
+              alignment: Alignment.center,
+              opacity: 0.60,
+              fit: BoxFit.fitHeight,
+              repeat: ImageRepeat.noRepeat),
+          // color: Color.fromARGB(255, 254, 212, 48),
+          shape: BoxShape.rectangle,
+        ),
+        child: Column(
           children: <Widget>[
             Expanded(
               child: CarouselSlider(
@@ -135,64 +168,11 @@ class _CarouselChangeReasonDemoState extends State<CarouselChangeReasonDemo> {
                 carouselController: _controller,
               ),
             ),
-            // Container(
-            //   margin: EdgeInsets.only(left: 80, right: 80),
-            //   child: Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //     children: <Widget>[
-            // Flexible(
-            //   child: ElevatedButton(
-            //     onPressed: () => _controller.previousPage(),
-            //     child: Text('←'),
-            //   ),
-            // ),
-            // Flexible(
-            //   child: ElevatedButton(
-            //     onPressed: () => _controller.nextPage(),
-            //     child: Text('→'),
-            //   ),
-            // ),
-            // ...Iterable<int>.generate(imgWdgets.length).map(
-            //   (int pageIndex) => Flexible(
-            //     child: Padding(
-            //       padding: const EdgeInsets.only(bottom: 20),
-            //       child: Container(
-            //         margin: EdgeInsets.only(left: 1, right: 1),
-            //         child: ElevatedButton(
-            //           onPressed: () =>
-            //               _controller.animateToPage(pageIndex),
-            //           child: Text(
-            //             "",
-            //             // "${pageIndex + 1}",
-            //             style: TextStyle(
-            //                 color: Colors.black,
-            //                 fontSize: 18,
-            //                 fontWeight: FontWeight.w400),
-            //           ),
-            //           style: ElevatedButton.styleFrom(
-            //               fixedSize: const Size(5, 5),
-            //               shape: const CircleBorder(),
-            //               backgroundColor:
-            //                   Color.fromARGB(255, 247, 209, 63)),
-            //         ),
-            //       ),
-            //     ),
-            //   ),
-            // ),
-            //     ],
-            //   ),
-            // ),
-            // Center(
-            //   child: Column(
-            //     children: [
-            //       Text('page change reason: '),
-            //       Text(reason),
-            //     ],
-            //   ),
-            // )
           ],
         ),
-        bottomNavigationBar: _btnInfo());
+      ),
+      // bottomNavigationBar: _btnInfo()
+    );
   }
 }
 

@@ -22,7 +22,7 @@ class _DrawerState extends State<DrawerPrincipal> {
                   border: Border(
                       bottom: BorderSide(color: Colors.grey, width: 1.2)),
                   image: DecorationImage(
-                      image: AssetImage('assets/images/gris2.jpg'),
+                      image: AssetImage('assets/images/drawer.png'),
                       fit: BoxFit.cover)),
               child: Container(
                 child: Image(
@@ -35,7 +35,7 @@ class _DrawerState extends State<DrawerPrincipal> {
           ListTile(
             leading: const Icon(
               Icons.home_outlined,
-              color: Colors.blueGrey,
+              color: Color.fromARGB(255, 123, 52, 141),
             ),
             title: Text('Inicio'),
             onTap: () {
@@ -44,8 +44,8 @@ class _DrawerState extends State<DrawerPrincipal> {
           ),
           ListTile(
             leading: Icon(
-              Icons.person,
-              color: Colors.blueGrey,
+              Icons.person_2_outlined,
+              color: Color.fromARGB(255, 123, 52, 141),
             ),
             title: Text('Perfil'),
             onTap: () {
@@ -54,8 +54,8 @@ class _DrawerState extends State<DrawerPrincipal> {
           ),
           ListTile(
             leading: Icon(
-              Icons.info,
-              color: Colors.blueGrey,
+              Icons.info_outline,
+              color: Color.fromARGB(255, 123, 52, 141),
             ),
             title: Text('Información'),
             onTap: () {
@@ -63,7 +63,7 @@ class _DrawerState extends State<DrawerPrincipal> {
             },
           )
           // ListTile(
-          //     leading: Icon(Icons.lightbulb_outline, color: Colors.blueGrey),
+          //     leading: Icon(Icons.lightbulb_outline, color: Color.fromARGB(255,123, 52, 141)),
           //     title: Text('Tips'),
           //     onTap: () {
           //       Navigator.pushReplacementNamed(context, 'tips');
@@ -72,13 +72,13 @@ class _DrawerState extends State<DrawerPrincipal> {
           //   color: Colors.grey[500],
           // ),
           // ListTile(
-          //     leading: Icon(Icons.info_outline, color: Colors.blueGrey),
+          //     leading: Icon(Icons.info_outline, color: Color.fromARGB(255,123, 52, 141)),
           //     title: Text('Información'),
           //     onTap: () {
           //       Navigator.pushReplacementNamed(context, 'informacion');
           //     }),
           // ListTile(
-          //   leading: Icon( Icons.lock_outline, color: Colors.blueGrey),
+          //   leading: Icon( Icons.lock_outline, color: Color.fromARGB(255,123, 52, 141)),
           //   title: Text('Aviso de privacidad'),
           //   onTap: () {
           //     Navigator.pushReplacementNamed(context, 'privacidad');

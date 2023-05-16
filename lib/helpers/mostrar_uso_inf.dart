@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-mostrarAlerta(
+mostrarUsoInformacion(
     BuildContext context, String titulo, String subtitulo, String button,
     {void Function()? funcion}) {
   if (Platform.isAndroid) {
@@ -19,7 +19,25 @@ mostrarAlerta(
                       ),
                     )
                   : null,
-              content: (subtitulo.length > 0) ? Text(subtitulo) : null,
+              content: Container(
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Image.asset(
+                        'assets/images/informacion.png',
+                        height: 100,
+                      ),
+                      Text(
+                        subtitulo,
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.justify,
+                      )
+                    ],
+                  ),
+                ),
+                // Text(subtitulo)
+              ),
               actionsAlignment: MainAxisAlignment.center,
               actions: [
                 ElevatedButton(

@@ -29,7 +29,7 @@ mostrarBienvenida(
                         height: 100,
                       ),
                       Text(
-                        'Bienvenido/a a nuestra app de prevención del suicidio, diseñada especialmente para brindarte apoyo y contención en los momentos más difíciles. Sabemos que la vida puede presentarnos situaciones complicadas y dolorosas, pero no estás solo/a. Nuestra app cuenta con un equipo de profesionales altamente capacitados en el área de la salud mental, que están dispuestos a escucharte y acompañarte en todo momento. Aquí podrás encontrar apoyo psicológico y asesoría psiquiátrica de manera confidencial, accesible y oportuna. Si estás luchando contra pensamientos suicidas, te invitamos a registrarte y te conectes con nuestra comunidad de apoyo. Juntos podemos superar este momento difícil y encontrar una luz en el camino.',
+                        subtitulo,
                         style: TextStyle(fontSize: 15),
                         textAlign: TextAlign.justify,
                       )
@@ -48,8 +48,8 @@ mostrarBienvenida(
                           },
                     child: Text(button),
                     style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(Colors.black)))
+                        backgroundColor: MaterialStateProperty.all(
+                            Color.fromARGB(255, 254, 212, 48))))
               ],
             ));
   }

@@ -38,17 +38,17 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Scaffold(
         body: Container(
-          color: Color.fromARGB(255, 170, 195, 189),
-          // decoration: BoxDecoration(
-          //   image: const DecorationImage(
-          //       image: AssetImage("assets/images/fondo_cuadricula2.png"),
-          //       alignment: Alignment.center,
-          //       opacity: 0.10,
-          //       // fit: BoxFit.cover,
-          //       repeat: ImageRepeat.repeat),
-          //   color: Color.fromARGB(255, 254, 212, 48),
-          //   shape: BoxShape.rectangle,
-          // ),
+          // color: Color.fromARGB(255, 170, 195, 189),
+          decoration: BoxDecoration(
+            image: const DecorationImage(
+                image: AssetImage("assets/images/fondo_colores.png"),
+                alignment: Alignment.center,
+                // opacity: 0.10,
+                fit: BoxFit.fitHeight,
+                repeat: ImageRepeat.noRepeat),
+            // color: Color.fromARGB(255, 254, 212, 48),
+            shape: BoxShape.rectangle,
+          ),
           child: Center(
             child: Card(
               shape: RoundedRectangleBorder(
@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             style: ButtonStyle(
                                 backgroundColor: MaterialStateProperty.all(
-                                    Color.fromARGB(255, 170, 195, 189))),
+                                    Color.fromARGB(255, 254, 212, 48))),
                           ),
                         ),
                         TextButton(
@@ -157,8 +157,12 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ),
         bottomNavigationBar: Container(
-            padding: EdgeInsets.only(bottom: 10),
-            color: Color.fromARGB(255, 170, 195, 189),
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/pie.png'),
+                    fit: BoxFit.cover)),
+            padding: EdgeInsets.only(bottom: 10, top: 10),
+            // color: Color.fromARGB(  255, 170, 195, 189),
             height: 50,
             child: Center(
               child: ElevatedButton(
@@ -172,13 +176,13 @@ class _LoginPageState extends State<LoginPage> {
                 child: Text(
                   'Información',
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 16,
-                      fontWeight: FontWeight.w400),
+                      fontWeight: FontWeight.w300),
                 ),
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
-                        Color.fromARGB(255, 254, 212, 48))),
+                        Color.fromARGB(255, 46, 178, 222))),
               ),
             )),
       ),

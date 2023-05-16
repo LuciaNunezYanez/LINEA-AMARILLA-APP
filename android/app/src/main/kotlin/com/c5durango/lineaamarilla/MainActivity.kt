@@ -1,4 +1,4 @@
-package com.example.linea_amarilla
+package com.c5durango.lineaamarilla
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -75,7 +75,7 @@ class _CardInformacionInventario1State
                     customWidths: [50.0, 50.0],
                     cornerRadius: 20.0,
                     activeBgColors: [
-                      [Colors.teal],
+                      [Color.fromARGB(255, 105, 212, 73)],
                       [Colors.redAccent]
                     ],
                     activeFgColor: Colors.white,
@@ -106,7 +106,7 @@ class _CardInformacionInventario1State
                     customWidths: [50.0, 50.0],
                     cornerRadius: 20.0,
                     activeBgColors: [
-                      [Colors.teal],
+                      [Color.fromARGB(255, 105, 212, 73)],
                       [Colors.redAccent]
                     ],
                     activeFgColor: Colors.white,
@@ -138,7 +138,7 @@ class _CardInformacionInventario1State
                     customWidths: [50.0, 50.0],
                     cornerRadius: 20.0,
                     activeBgColors: [
-                      [Colors.teal],
+                      [Color.fromARGB(255, 105, 212, 73)],
                       [Colors.redAccent]
                     ],
                     activeFgColor: Colors.white,
@@ -170,7 +170,7 @@ class _CardInformacionInventario1State
                     customWidths: [50.0, 50.0],
                     cornerRadius: 20.0,
                     activeBgColors: [
-                      [Colors.teal],
+                      [Color.fromARGB(255, 105, 212, 73)],
                       [Colors.redAccent]
                     ],
                     activeFgColor: Colors.white,
@@ -202,7 +202,7 @@ class _CardInformacionInventario1State
                     customWidths: [50.0, 50.0],
                     cornerRadius: 20.0,
                     activeBgColors: [
-                      [Colors.teal],
+                      [Color.fromARGB(255, 105, 212, 73)],
                       [Colors.redAccent]
                     ],
                     activeFgColor: Colors.white,
@@ -357,7 +357,7 @@ class _CardInformacionInventario1State
 //                   customWidths: [50.0, 50.0],
 //                   cornerRadius: 20.0,
 //                   activeBgColors: [
-//                     [Colors.teal],
+//                     [Color.fromARGB(255,105, 212, 73)],
 //                     [Colors.redAccent]
 //                   ],
 //                   activeFgColor: Colors.white,
@@ -387,7 +387,7 @@ class _CardInformacionInventario1State
 //                   customWidths: [50.0, 50.0],
 //                   cornerRadius: 20.0,
 //                   activeBgColors: [
-//                     [Colors.teal],
+//                     [Color.fromARGB(255,105, 212, 73)],
 //                     [Colors.redAccent]
 //                   ],
 //                   activeFgColor: Colors.white,
@@ -418,7 +418,7 @@ class _CardInformacionInventario1State
 //                   customWidths: [50.0, 50.0],
 //                   cornerRadius: 20.0,
 //                   activeBgColors: [
-//                     [Colors.teal],
+//                     [Color.fromARGB(255,105, 212, 73)],
 //                     [Colors.redAccent]
 //                   ],
 //                   activeFgColor: Colors.white,
@@ -449,7 +449,7 @@ class _CardInformacionInventario1State
 //                   customWidths: [50.0, 50.0],
 //                   cornerRadius: 20.0,
 //                   activeBgColors: [
-//                     [Colors.teal],
+//                     [Color.fromARGB(255,105, 212, 73)],
 //                     [Colors.redAccent]
 //                   ],
 //                   activeFgColor: Colors.white,
@@ -479,7 +479,7 @@ class _CardInformacionInventario1State
 //                   customWidths: [50.0, 50.0],
 //                   cornerRadius: 20.0,
 //                   activeBgColors: [
-//                     [Colors.teal],
+//                     [Color.fromARGB(255,105, 212, 73)],
 //                     [Colors.redAccent]
 //                   ],
 //                   activeFgColor: Colors.white,

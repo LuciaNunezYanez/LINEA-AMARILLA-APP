@@ -203,8 +203,8 @@ class _CardReferenciasState extends State<CardReferencias> {
                           },
                           child: Text("Terminar registro"),
                           style: ButtonStyle(
-                              backgroundColor:
-                                  MaterialStateProperty.all(Colors.black)))
+                              backgroundColor: MaterialStateProperty.all(
+                                  Color.fromARGB(255, 222, 34, 140))))
                     ],
                   ),
                 ],

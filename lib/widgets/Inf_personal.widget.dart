@@ -150,8 +150,8 @@ class _CardInformacionPersonalState extends State<CardInformacionPersonal> {
                         labels: ['Hombre', 'Mujer'],
                         icons: [Icons.male, Icons.female],
                         activeBgColors: [
-                          [Colors.blueAccent],
-                          [Colors.pinkAccent]
+                          [Color.fromARGB(255, 46, 178, 222)],
+                          [Color.fromARGB(255, 222, 34, 140)]
                         ],
                         onToggle: (index) {
                           generoInd = index ?? 0;

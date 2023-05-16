@@ -17,14 +17,26 @@ class _InicioPageState extends State<InicioPage> {
     LoginPreferences _loginP = new LoginPreferences();
 
     return Stack(children: [
-      Image.asset(
-        "assets/images/gris2_volt.jpg",
-        // "assets/images/lazo.jpg",
-        // color: Colors.white.withOpacity(.9), colorBlendMode: BlendMode.modulate,
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        fit: BoxFit.fitHeight,
+      Container(
+        decoration: BoxDecoration(
+          image: const DecorationImage(
+              image: AssetImage("assets/images/fondo_opaco.jpg"),
+              alignment: Alignment.center,
+              // opacity: 0.5,
+              fit: BoxFit.fitHeight,
+              repeat: ImageRepeat.noRepeat),
+          // color: Color.fromARGB(255, 254, 212, 48),
+          shape: BoxShape.rectangle,
+        ),
       ),
+      // Image.asset(
+      //   "assets/images/fondo_colores.png",
+      //   // "assets/images/lazo.jpg",
+      //   // color: Colors.white.withOpacity(.9), colorBlendMode: BlendMode.modulate,
+      //   height: MediaQuery.of(context).size.height,
+      //   width: MediaQuery.of(context).size.width,
+      //   fit: BoxFit.fitHeight,
+      // ),
       Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -37,11 +49,11 @@ class _InicioPageState extends State<InicioPage> {
         body: Container(
           // color: Color.fromARGB(255, 192, 13, 35),
           height: MediaQuery.of(context).size.height * 0.3,
-          child: (_loginP.puntaje <= 6)
+          child: (_loginP.puntaje >= 6)
               ? Container(
                   width: MediaQuery.of(context).size.width,
                   child: Card(
-                    color: Color.fromARGB(255, 170, 195, 189),
+                    // color: Color.fromARGB(255, 170, 195, 189),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     margin: EdgeInsets.all(15),
@@ -52,13 +64,13 @@ class _InicioPageState extends State<InicioPage> {
                         Text(
                           '¡Gracias por registrarte!',
                           style: TextStyle(
-                              color: Color.fromARGB(255, 238, 104, 2),
+                              color: Color.fromARGB(255, 52, 119, 1),
                               fontSize: 22),
                         ),
                         Text(
                           'EN UN MOMENTO NOS COMUNICAREMOS CONTIGO',
                           style: TextStyle(
-                              color: Color.fromARGB(255, 52, 119, 1),
+                              color: Color.fromARGB(255, 247, 162, 36),
                               fontSize: 24,
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
@@ -72,7 +84,7 @@ class _InicioPageState extends State<InicioPage> {
               : Container(
                   width: MediaQuery.of(context).size.width,
                   child: Card(
-                    color: Color.fromARGB(255, 170, 195, 189),
+                    // color: Color.fromARGB(255, 170, 195, 189),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     margin: EdgeInsets.all(15),
@@ -83,14 +95,14 @@ class _InicioPageState extends State<InicioPage> {
                         Text(
                           '¡Gracias por registrarte!',
                           style: TextStyle(
-                              color: Color.fromARGB(255, 238, 104, 2),
+                              color: Color.fromARGB(255, 105, 212, 73),
                               fontSize: 22,
                               fontWeight: FontWeight.w400),
                         ),
                         Text(
                           'DE SER NECESARIO NOS COMUNICAREMOS CONTIGO',
                           style: TextStyle(
-                              color: Colors.white,
+                              color: Color.fromARGB(255, 222, 34, 140),
                               fontSize: 24,
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,

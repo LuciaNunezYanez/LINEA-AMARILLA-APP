@@ -122,24 +122,28 @@ class _PerfilPageState extends State<PerfilPage> {
                   children: [
                     // Image.asset('assets/images/fondo_gris_oscuro.jpeg'),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtGenero,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Género'),
                         prefixIcon: Icon(
                           Icons.person,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 105, 212, 73),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtFNacimiento,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Fecha de nacimiento'),
                         prefixIcon: Icon(
                           Icons.event,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 105, 212, 73),
                         ),
                       ),
                     ),
@@ -147,101 +151,119 @@ class _PerfilPageState extends State<PerfilPage> {
                       height: 25,
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtCalle,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Calle'),
                         prefixIcon: Icon(
                           Icons.add_road,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtNumeroExt,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Número exterior'),
                         prefixIcon: Icon(
                           Icons.pin,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtNumeroInt,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Número interior'),
                         prefixIcon: Icon(
                           Icons.money_outlined,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtColonia,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Colonia'),
                         prefixIcon: Icon(
                           Icons.maps_home_work,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtCP,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Código postal'),
                         prefixIcon: Icon(
                           Icons.markunread_mailbox,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtEntreCalles,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Entre calles'),
                         prefixIcon: Icon(
                           Icons.map_outlined,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtEstado,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Estado'),
                         prefixIcon: Icon(
                           Icons.apartment_rounded,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtMunicipio,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Municipio'),
                         prefixIcon: Icon(
                           Icons.location_city,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
                     TextField(
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.w300),
                       controller: txtLocalidad,
                       enabled: false,
                       decoration: const InputDecoration(
                         label: Text('Localidad'),
                         prefixIcon: Icon(
                           Icons.place,
-                          color: Color.fromARGB(255, 238, 104, 2),
+                          color: Color.fromARGB(255, 123, 52, 141),
                         ),
                       ),
                     ),
@@ -249,12 +271,12 @@ class _PerfilPageState extends State<PerfilPage> {
                       height: 15,
                     ),
                     Text(
-                        'Se desea actualizar su información comuniquese al número 01800BLABLA.',
+                        'Si desea actualizar su información comuniquese al número 01800BLABLA.',
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.green[700],
-                        ))
+                        style:
+                            TextStyle(fontSize: 14, fontWeight: FontWeight.w300
+                                // color: Colors.green[700],
+                                ))
                   ],
                 ),
               ),
@@ -281,11 +303,11 @@ class _PerfilPageState extends State<PerfilPage> {
                     },
                     child: Text('         CERRAR SESIÓN         ',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                         )),
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
-                            Color.fromARGB(255, 247, 209, 63))),
+                            Color.fromARGB(255, 222, 34, 140))),
                   ),
                 ),
               ),
